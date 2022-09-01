@@ -52,7 +52,7 @@
 		window.onload = function stats(){
 
 			const ajax =  $.ajax({
-				url: 'select1.php',
+				url: 'statsSelect1.php',
 				method: 'GET',
 				dataType: 'json',
 				success: function(data){
@@ -76,7 +76,7 @@
 
 
 			const ajax2 =  $.ajax({
-				url: 'select2.php',
+				url: 'statsSelect2.php',
 				method: 'GET',
 				dataType: 'json',
 				success: function(data){
@@ -101,7 +101,7 @@
 			}
 	
 			const ajax3 =  $.ajax({
-				url: 'select3.php',
+				url: 'statsSelect3.php',
 				method: 'GET',
 				dataType: 'json',
 				success: function(data){
