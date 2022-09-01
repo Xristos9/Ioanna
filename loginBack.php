@@ -6,7 +6,7 @@ include "dbConnect.php";
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-$result = mysqli_query($base, "SELECT * FROM person WHERE Email='$email' AND Password='$pass' ");
+$result = mysqli_query($base, "SELECT * FROM `person` WHERE `Email`='$email' AND `Password`='$pass' ");
 if(mysqli_num_rows($result) === 1) {
 	$row = mysqli_fetch_assoc($result);
 	$_SESSION['Admin'] = $row['Admin'];
